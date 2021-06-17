@@ -1,0 +1,7 @@
+helm:
+  repo: https://charts.bitnami.com/bitnami
+  chart: memcached
+  version: 4.2.20
+  values:
+    service:
+      port: 11211

@@ -1,0 +1,13 @@
+helm:
+  repo: https://charts.bitnami.com/bitnami
+  chart: postgresql
+  version: 9.7.2
+  values:
+    global:
+      postgresql:
+        postgresqlDatabase: gitea
+        postgresqlUsername: gitea
+        postgresqlPassword: gitea
+        servicePort: 5432
+    persistence:
+      size: 10Gi
